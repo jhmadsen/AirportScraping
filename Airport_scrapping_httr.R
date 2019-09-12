@@ -49,3 +49,4 @@ for(i in 1:length(flight_containers)){
   flight_df[i,] <- flight_vector
 }
 
+write.csv(flight_df, paste("C:\\Users\\jacma\\Desktop\\", "flights - ", Sys.Date(), ".csv", sep=''), row.names=FALSE)
